@@ -37,7 +37,7 @@ app.get('/help', (req,res)=>{
         title:'Help Page',
         name: 'Priyank',
         instructions: "Please make sure that you refer the entire documentation before sending inquiry",
-        helpText: "Dumb."
+        helpText: "Add your location and hit search ! "
     })
 })
 
