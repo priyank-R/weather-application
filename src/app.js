@@ -7,6 +7,7 @@ const geocode = require('./geocode')
 
 const express = require('express')
 const hbs = require('hbs')
+const port = process.env.PORT || 3000
 
 //Step 2: Using the express method and assigning its return value to app
 
@@ -88,6 +89,6 @@ app.get('*',(req,res)=>{
 
 //Using app.listen() to initiate the server 
 
-app.listen(3000,()=>{
-    console.log('Server is up on the port 3000')
+app.listen(port,()=>{
+    console.log('Server is up on the port ' + port)
 })

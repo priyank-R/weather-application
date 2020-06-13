@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', (e)=>{
     }
     else
     {
-        let url = 'http://localhost:3000/weather?address=' + search
+        let url = '/weather?address=' + search
         msg1.textContent = 'Loading'
         msg2.textContent = ''
         var data = fetchWeather(url, (data)=>{
