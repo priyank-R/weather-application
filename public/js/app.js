@@ -41,7 +41,7 @@ weatherForm.addEventListener('submit', (e)=>{
         var data = fetchWeather(url, (data)=>{
             if(!data=='')
             {
-            msg1.textContent = data.name
+            msg1.textContent = data.name + ', ' + data.country
             msg2.textContent = data.temperature + ' Degrees Celcius'
             }
         })
