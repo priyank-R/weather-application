@@ -36,7 +36,8 @@ app.get('/help', (req,res)=>{
     res.render('help',{
         title:'Help Page',
         name: 'Priyank',
-        instructions: "Please make sure that you refer the entire documentation before sending inquiry"
+        instructions: "Please make sure that you refer the entire documentation before sending inquiry",
+        helpText: "Dumb."
     })
 })
 
